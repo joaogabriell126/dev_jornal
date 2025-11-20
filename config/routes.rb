@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts, except: [:index]
   # Aqui crio uma rota raiz usando o root
   root "pages#home"
   # Para rotas paralelas uso e get (Posso criar quantas eu quiser)
