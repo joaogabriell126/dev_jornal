@@ -127,3 +127,49 @@ Estilo do home
     line-height: 1.625;
     font-size: 0.875rem;
 }
+
+/* 
+==========================
+Estilo do Sobre
+==========================
+*/
+
+.about-mural{
+    margin: auto;
+    padding: 3rem 1.5rem;
+    max-width: 47rem;
+}
+
+.about-mural, .about-morals__intro, .about-mural__section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-mural__title{
+    color: #403126;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.about-mural__subtitle{
+    color: #403126;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+}
+
+.about-mural__text{
+    color: #403126E6;
+    line-height: 1.625;
+}
+
+.about-mural__text--highlight{
+    color: #403126E6;
+    font-weight: 700;
+}
+.about-mural__text--footer{
+    color: #937c6c;
+}
