@@ -24,6 +24,20 @@
   </head>
 
   <body>
+    <header class="header">
+      <h2 class="header__title">Mural de Ideias</h2>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><%= link_to "Home", root_path, class: "header__nav-option" %></li>
+          <li><%= link_to "Sobre", sobre_path, class: "header__nav-option" %></li>
+        </ul>
+      </nav>
+    </header>
+    
     <%= yield %>
+
+    <footer class="footer">
+      <p class="footer__description">&copy; 2025 | Um projeto de aprendizado em Ruby on Rails.</p>
+    </footer>
   </body>
 </html>
