@@ -11,6 +11,8 @@
 
     <%= yield :head %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
@@ -30,6 +32,7 @@
         <ul class="header__nav-list">
           <li><%= link_to "Home", root_path, class: "header__nav-option" %></li>
           <li><%= link_to "Sobre", sobre_path, class: "header__nav-option" %></li>
+          <%= link_to "Nova Ideia", new_post_path, class: "header__nav-option", data: { turbo_frame: "modal" } %>
         </ul>
       </nav>
     </header>
@@ -41,5 +44,7 @@
     <footer class="footer">
       <p class="footer__description">&copy; 2025 | Um projeto de aprendizado em Ruby on Rails.</p>
     </footer>
+
+    <%= turbo_frame_tag "modal" %>
   </body>
 </html>

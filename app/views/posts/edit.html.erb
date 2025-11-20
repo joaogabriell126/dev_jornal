@@ -1,0 +1,11 @@
+<%= turbo_frame_tag "modal" do %>
+  <div class="modal-backdrop">
+    <div class="modal-box">
+      <h2>Editar Ideia</h2>
+
+      <%= render "form", post: @post %>
+      
+      <%= link_to "Cancelar", root_path, data: { turbo_frame: "_top" } %>
+    </div>
+  </div>
+<% end %>
